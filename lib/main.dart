@@ -4,7 +4,6 @@ void main() {
   runApp(MaterialApp(
     title: 'Contador de Pessoas',
     home: Column(
-      // crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
@@ -13,6 +12,31 @@ void main() {
             color: Colors.white,
             fontWeight: FontWeight.bold,
           ),
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            FlatButton(
+              child: Text(
+                '+1',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                ),
+              ),
+              onPressed: () {},
+            ),
+            FlatButton(
+              child: Text(
+                '-1',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                ),
+              ),
+              onPressed: () {},
+            ),
+          ],
         ),
         Text(
           'Pode Entrar!',
